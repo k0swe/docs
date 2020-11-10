@@ -5,7 +5,7 @@ these repositories are components for the KelLog web-based contact logger.
 
 ## KelLog repositories
 
-![Architecture](architecture.svg)
+[![Architecture](architecture.svg)](architecture.svg)
 
 ### Web application
 
