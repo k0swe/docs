@@ -3,7 +3,7 @@ digraph {
     newrank = true;
 
     subgraph clusterComputer {
-        graph [truecolor = true bgcolor = "#ffffffff"]
+        graph [truecolor = true bgcolor = "gray100"]
         label = "Local Host";
         style = rounded;
         fontsize = 10;
@@ -12,18 +12,20 @@ digraph {
             label = "Web Browser";
             fontsize = 10;
             color = lightgrey;
+            style=filled;
+            fillcolor = "grey95";
 
-            kellog [URL="https://github.com/k0swe/kellog"]
-            adifparserts [label = "adif-parser-ts"; URL="https://github.com/k0swe/adif-parser-ts"]
+            kellog [URL="https://github.com/k0swe/kellog"; style=filled; fillcolor="#2b7489"; fontcolor=white]
+            adifparserts [label = "adif-parser-ts"; URL="https://github.com/k0swe/adif-parser-ts"; style=filled; fillcolor="#2b7489"; fontcolor=white]
             kellog -> adifparserts
         };
-        agent [label = "kel-agent"; URL="https://github.com/k0swe/kel-agent"]
-        wsjtxgo [label = "wsjtx-go"; URL="https://github.com/k0swe/wsjtx-go"]
+        agent [label = "kel-agent"; URL="https://github.com/k0swe/kel-agent"; style=filled; fillcolor="#00ADD8"]
+        wsjtxgo [label = "wsjtx-go"; URL="https://github.com/k0swe/wsjtx-go"; style=filled; fillcolor="#00ADD8"]
         agent -> wsjtxgo
     }
 
     subgraph clusterGCP {
-        graph [truecolor = true bgcolor = "#ffffffff"]
+        graph [truecolor = true bgcolor = "gray100"]
         label = "GCP";
         style = rounded;
         fontsize = 10;
@@ -32,10 +34,12 @@ digraph {
             label = "Cloud Functions";
             fontsize = 10;
             color = lightgrey;
+            style=filled;
+            fillcolor = "grey95";
 
-            func [label = "kellog-func"; URL="https://github.com/k0swe/kellog-func"]
-            qrzlogbook [label = "qrz-logbook"; URL="https://github.com/k0swe/qrz-logbook"]
-            lotwapi [label = "lotw-api"; URL="https://github.com/k0swe/lotw-api"]
+            func [label = "kellog-func"; URL="https://github.com/k0swe/kellog-func"; style=filled; fillcolor="#00ADD8"]
+            qrzlogbook [label = "qrz-logbook"; URL="https://github.com/k0swe/qrz-logbook"; style=filled; fillcolor="#00ADD8"]
+            lotwapi [label = "lotw-api"; URL="https://github.com/k0swe/lotw-api"; style=filled; fillcolor="#00ADD8"]
             func -> qrzlogbook
             func -> lotwapi
         };
@@ -44,7 +48,9 @@ digraph {
             label = "Cloud Firestore";
             fontsize = 10;
             color = lightgrey;
-            adifjson [label = "adif-json-protobuf"; URL="https://github.com/k0swe/adif-json-protobuf"]
+            style=filled;
+            fillcolor = "grey95";
+            adifjson [label = "adif-json-protobuf"; URL="https://github.com/k0swe/adif-json-protobuf"; style=filled; fillcolor="#f1e05a"]
         };
     };
 
