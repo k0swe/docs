@@ -1,65 +1,58 @@
 digraph {
-    rankdir = LR;
+    graph [truecolor = true bgcolor = "#ffffff00"]
+    newrank = true;
+
+    subgraph clusterComputer {
+        graph [truecolor = true bgcolor = "#ffffffff"]
+        label = "Local Host";
+        style = rounded;
+        fontsize = 10;
+
+        subgraph clusterBrowser {
+            label = "Web Browser";
+            fontsize = 10;
+            color = lightgrey;
+
+            kellog [URL="https://github.com/k0swe/kellog"]
+            adifparserts [label = "adif-parser-ts"; URL="https://github.com/k0swe/adif-parser-ts"]
+            kellog -> adifparserts
+        };
+        agent [label = "kel-agent"; URL="https://github.com/k0swe/kel-agent"]
+        wsjtxgo [label = "wsjtx-go"; URL="https://github.com/k0swe/wsjtx-go"]
+        agent -> wsjtxgo
+    }
 
     subgraph clusterGCP {
+        graph [truecolor = true bgcolor = "#ffffffff"]
         label = "GCP";
-        labeljust = l;
         style = rounded;
         fontsize = 10;
 
         subgraph clusterGCF {
             label = "Cloud Functions";
-            labeljust = l;
             fontsize = 10;
             color = lightgrey;
-            func [
-                shape = record;
-                label = "<kellogfunc>kellog-func|{qrz-logbook|lotw-api}"
-                URL = "https://github.com/k0swe/kellog-func"
-            ]
+
+            func [label = "kellog-func"; URL="https://github.com/k0swe/kellog-func"]
+            qrzlogbook [label = "qrz-logbook"; URL="https://github.com/k0swe/qrz-logbook"]
+            lotwapi [label = "lotw-api"; URL="https://github.com/k0swe/lotw-api"]
+            func -> qrzlogbook
+            func -> lotwapi
         };
 
         subgraph clusterFirebase {
             label = "Cloud Firestore";
-            labeljust = l;
             fontsize = 10;
             color = lightgrey;
-            firestore [
-                shape = record;
-                label = "<adifjs>adif-json-protobuf"
-                URL = "https://github.com/k0swe/adif-json-protobuf"
-            ]
+            adifjson [label = "adif-json-protobuf"; URL="https://github.com/k0swe/adif-json-protobuf"]
         };
-    }
+    };
 
-    subgraph clusterComputer {
-        label = "Local Host";
-        labeljust = l;
-        style = rounded;
-        fontsize = 10;
-        subgraph clusterBrowser {
-            label = "Web Browser";
-            labeljust = l;
-            fontsize = 10;
-            color = lightgrey;
-            webapp [
-                shape = record;
-                label = "<kellog>KelLog|<adifparserts>adif-parser-ts"
-                URL = "https://github.com/k0swe/kellog"
-            ];
-        };
-        agent [
-            shape = record;
-            label = "<kelagent>kel-agent|{wsjtx-go}";
-            URL = "https://github.com/k0swe/kel-agent"
-        ]
-    }
+    edge [style = dashed; dir = none;]
+    {rank = same; kellog; agent; func}
 
-    edge [style = bold; dir = none; fontsize = 10;]
-
-
-    webapp: kellog -> agent: kelagent
-    webapp: kellog -> func: kellogfunc
-    webapp: kellog -> firestore: adifjs
-    firestore: adifjs -> func: kellogfunc
+    agent -> kellog;
+    kellog -> adifjson;
+    kellog -> func;
+    func -> adifjson;
 }
