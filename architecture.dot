@@ -1,0 +1,65 @@
+digraph {
+    rankdir = LR;
+
+    subgraph clusterGCP {
+        label = "GCP";
+        labeljust = l;
+        style = rounded;
+        fontsize = 10;
+
+        subgraph clusterGCF {
+            label = "Cloud Functions";
+            labeljust = l;
+            fontsize = 10;
+            color = lightgrey;
+            func [
+                shape = record;
+                label = "<kellogfunc>kellog-func|{qrz-logbook|lotw-api}"
+                URL = "https://github.com/k0swe/kellog-func"
+            ]
+        };
+
+        subgraph clusterFirebase {
+            label = "Cloud Firestore";
+            labeljust = l;
+            fontsize = 10;
+            color = lightgrey;
+            firestore [
+                shape = record;
+                label = "<adifjs>adif-json-protobuf"
+                URL = "https://github.com/k0swe/adif-json-protobuf"
+            ]
+        };
+    }
+
+    subgraph clusterComputer {
+        label = "Local Host";
+        labeljust = l;
+        style = rounded;
+        fontsize = 10;
+        subgraph clusterBrowser {
+            label = "Web Browser";
+            labeljust = l;
+            fontsize = 10;
+            color = lightgrey;
+            webapp [
+                shape = record;
+                label = "<kellog>KelLog|<adifparserts>adif-parser-ts"
+                URL = "https://github.com/k0swe/kellog"
+            ];
+        };
+        agent [
+            shape = record;
+            label = "<kelagent>kel-agent|{wsjtx-go}";
+            URL = "https://github.com/k0swe/kel-agent"
+        ]
+    }
+
+    edge [style = bold; dir = none; fontsize = 10;]
+
+
+    webapp: kellog -> agent: kelagent
+    webapp: kellog -> func: kellogfunc
+    webapp: kellog -> firestore: adifjs
+    firestore: adifjs -> func: kellogfunc
+}
