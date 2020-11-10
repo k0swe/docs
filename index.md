@@ -22,3 +22,7 @@ these repositories are components for the KelLog web-based contact logger.
 * [kellog-func](https://github.com/k0swe/kellog-func)
 * [qrz-logbook](https://github.com/k0swe/qrz-logbook)
 * [lotw-api](https://github.com/k0swe/lotw-api)
+
+### Firestore schema
+
+* [adif-json-protobuf](https://github.com/k0swe/adif-json-protobuf)
