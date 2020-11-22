@@ -3,7 +3,6 @@
 This organization contains amateur radio projects for Chris, K0SWE. Primarily,
 these repositories are components for the KelLog web-based contact logger.
 
-
 ## KelLog repositories
 
 [![Architecture](architecture.svg)](architecture.svg)
