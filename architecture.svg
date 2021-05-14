@@ -34,12 +34,12 @@
 <polygon fill="#f2f2f2" stroke="lightgrey" points="318,-16 318,-87 520,-87 520,-16 318,-16"/>
 <text text-anchor="middle" x="419" y="-75" font-family="Times,serif" font-size="10.00">Cloud Firestore</text>
 </g>
-<!-- kellog -->
+<!-- forester -->
 <g id="node1" class="node">
-<title>kellog</title>
-<g id="a_node1"><a xlink:href="https://github.com/k0swe/kellog" xlink:title="kellog">
-<ellipse fill="#2b7489" stroke="black" cx="230" cy="-114" rx="38.19" ry="18"/>
-<text text-anchor="middle" x="230" y="-110.3" font-family="Times,serif" font-size="14.00" fill="white">kellog</text>
+<title>forester</title>
+<g id="a_node1"><a xlink:href="https://github.com/k0swe/forester" xlink:title="forester">
+<ellipse fill="#2b7489" stroke="black" cx="225" cy="-114" rx="48.19" ry="18"/>
+<text text-anchor="middle" x="225" y="-110.3" font-family="Times,serif" font-size="14.00" fill="white">forester</text>
 </a>
 </g>
 </g>
@@ -52,25 +52,25 @@
 </a>
 </g>
 </g>
-<!-- kellog&#45;&gt;adifparserts -->
+<!-- forester&#45;&gt;adifparserts -->
 <g id="edge1" class="edge">
-<title>kellog&#45;&gt;adifparserts</title>
-<path fill="none" stroke="black" d="M225.88,-96.05C223.99,-88.26 221.7,-78.82 219.58,-70.08"/>
-<polygon fill="black" stroke="black" points="222.96,-69.17 217.2,-60.28 216.15,-70.82 222.96,-69.17"/>
+<title>forester&#45;&gt;adifparserts</title>
+<path fill="none" stroke="black" d="M222.03,-95.7C220.71,-87.98 219.12,-78.71 217.65,-70.11"/>
+<polygon fill="black" stroke="black" points="221.07,-69.37 215.93,-60.1 214.17,-70.55 221.07,-69.37"/>
 </g>
 <!-- func -->
 <g id="node5" class="node">
 <title>func</title>
-<g id="a_node5"><a xlink:href="https://github.com/k0swe/kellog-func" xlink:title="kellog&#45;func">
-<ellipse fill="#00add8" stroke="black" cx="599" cy="-114" rx="61.99" ry="18"/>
-<text text-anchor="middle" x="599" y="-110.3" font-family="Times,serif" font-size="14.00">kellog&#45;func</text>
+<g id="a_node5"><a xlink:href="https://github.com/k0swe/forester-func" xlink:title="forester&#45;func">
+<ellipse fill="#00add8" stroke="black" cx="607" cy="-114" rx="70.69" ry="18"/>
+<text text-anchor="middle" x="607" y="-110.3" font-family="Times,serif" font-size="14.00">forester&#45;func</text>
 </a>
 </g>
 </g>
-<!-- kellog&#45;&gt;func -->
+<!-- forester&#45;&gt;func -->
 <g id="edge7" class="edge">
-<title>kellog&#45;&gt;func</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M268.56,-114C358.05,-114 447.55,-114 537.04,-114"/>
+<title>forester&#45;&gt;func</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M273.12,-114C360.72,-114 448.32,-114 535.92,-114"/>
 </g>
 <!-- adifjson -->
 <g id="node8" class="node">
@@ -81,10 +81,10 @@
 </a>
 </g>
 </g>
-<!-- kellog&#45;&gt;adifjson -->
+<!-- forester&#45;&gt;adifjson -->
 <g id="edge6" class="edge">
-<title>kellog&#45;&gt;adifjson</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M259.12,-102.22C290.91,-90.44 342.06,-71.5 377.92,-58.21"/>
+<title>forester&#45;&gt;adifjson</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M258.82,-101.01C271.16,-96.62 285.21,-91.6 298,-87 324.5,-77.46 354.23,-66.65 377.58,-58.14"/>
 </g>
 <!-- agent -->
 <g id="node3" class="node">
@@ -95,10 +95,10 @@
 </a>
 </g>
 </g>
-<!-- agent&#45;&gt;kellog -->
+<!-- agent&#45;&gt;forester -->
 <g id="edge5" class="edge">
-<title>agent&#45;&gt;kellog</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M124.06,-114C146.55,-114 169.03,-114 191.51,-114"/>
+<title>agent&#45;&gt;forester</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M124.19,-114C141.65,-114 159.11,-114 176.56,-114"/>
 </g>
 <!-- wsjtxgo -->
 <g id="node4" class="node">
@@ -127,8 +127,8 @@
 <!-- func&#45;&gt;qrzlogbook -->
 <g id="edge3" class="edge">
 <title>func&#45;&gt;qrzlogbook</title>
-<path fill="none" stroke="black" d="M599.49,-95.7C599.71,-87.98 599.98,-78.71 600.23,-70.11"/>
-<polygon fill="black" stroke="black" points="603.72,-70.2 600.51,-60.1 596.73,-70 603.72,-70.2"/>
+<path fill="none" stroke="black" d="M605.52,-95.7C604.86,-87.98 604.06,-78.71 603.32,-70.11"/>
+<polygon fill="black" stroke="black" points="606.81,-69.77 602.47,-60.1 599.83,-70.37 606.81,-69.77"/>
 </g>
 <!-- lotwapi -->
 <g id="node7" class="node">
@@ -142,13 +142,13 @@
 <!-- func&#45;&gt;lotwapi -->
 <g id="edge4" class="edge">
 <title>func&#45;&gt;lotwapi</title>
-<path fill="none" stroke="black" d="M642.25,-100.94C653.23,-97.14 664.81,-92.48 675,-87 686.07,-81.05 697.24,-72.98 706.72,-65.38"/>
-<polygon fill="black" stroke="black" points="709.09,-67.96 714.57,-58.89 704.63,-62.56 709.09,-67.96"/>
+<path fill="none" stroke="black" d="M648.51,-99.34C657.47,-95.79 666.73,-91.64 675,-87 685.79,-80.94 696.76,-72.99 706.16,-65.52"/>
+<polygon fill="black" stroke="black" points="708.44,-68.17 713.97,-59.13 704.01,-62.75 708.44,-68.17"/>
 </g>
 <!-- func&#45;&gt;adifjson -->
 <g id="edge8" class="edge">
 <title>func&#45;&gt;adifjson</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M559.9,-99.97C548.29,-95.96 535.58,-91.43 524,-87 500.74,-78.1 474.94,-67.31 454.74,-58.63"/>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M562.38,-99.86C549.88,-95.95 536.34,-91.51 524,-87 500.42,-78.39 474.4,-67.49 454.15,-58.7"/>
 </g>
 </g>
 </svg>

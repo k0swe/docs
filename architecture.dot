@@ -15,9 +15,9 @@ digraph {
             style=filled;
             fillcolor = "grey95";
 
-            kellog [URL="https://github.com/k0swe/kellog"; style=filled; fillcolor="#2b7489"; fontcolor=white]
+            forester [URL="https://github.com/k0swe/forester"; style=filled; fillcolor="#2b7489"; fontcolor=white]
             adifparserts [label = "adif-parser-ts"; URL="https://github.com/k0swe/adif-parser-ts"; style=filled; fillcolor="#2b7489"; fontcolor=white]
-            kellog -> adifparserts
+            forester -> adifparserts
         };
         agent [label = "kel-agent"; URL="https://github.com/k0swe/kel-agent"; style=filled; fillcolor="#00ADD8"]
         wsjtxgo [label = "wsjtx-go"; URL="https://github.com/k0swe/wsjtx-go"; style=filled; fillcolor="#00ADD8"]
@@ -37,7 +37,7 @@ digraph {
             style=filled;
             fillcolor = "grey95";
 
-            func [label = "kellog-func"; URL="https://github.com/k0swe/kellog-func"; style=filled; fillcolor="#00ADD8"]
+            func [label = "forester-func"; URL="https://github.com/k0swe/forester-func"; style=filled; fillcolor="#00ADD8"]
             qrzlogbook [label = "qrz-logbook"; URL="https://github.com/k0swe/qrz-logbook"; style=filled; fillcolor="#00ADD8"]
             lotwapi [label = "lotw-api"; URL="https://github.com/k0swe/lotw-api"; style=filled; fillcolor="#00ADD8"]
             func -> qrzlogbook
@@ -55,10 +55,10 @@ digraph {
     };
 
     edge [style = dashed; dir = none;]
-    {rank = same; kellog; agent; func}
+    {rank = same; forester; agent; func}
 
-    agent -> kellog;
-    kellog -> adifjson;
-    kellog -> func;
+    agent -> forester;
+    forester -> adifjson;
+    forester -> func;
     func -> adifjson;
 }
