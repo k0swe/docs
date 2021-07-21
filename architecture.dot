@@ -38,10 +38,14 @@ digraph {
             fillcolor = "grey95";
 
             func [label = "forester-func"; URL="https://github.com/k0swe/forester-func"; style=filled; fillcolor="#00ADD8"]
+            qrzapi [label = "qrz-api"; URL="https://github.com/k0swe/qrz-api"; style=filled; fillcolor="#00ADD8"]
             qrzlogbook [label = "qrz-logbook"; URL="https://github.com/k0swe/qrz-logbook"; style=filled; fillcolor="#00ADD8"]
             lotwapi [label = "lotw-api"; URL="https://github.com/k0swe/lotw-api"; style=filled; fillcolor="#00ADD8"]
+            func -> qrzapi
             func -> qrzlogbook
+            qrzapi -> qrzlogbook [style=invis]
             func -> lotwapi
+            {rank=sink; qrzlogbook}
         };
 
         subgraph clusterFirebase {
@@ -55,7 +59,7 @@ digraph {
     };
 
     edge [style = dashed; dir = none;]
-    {rank = same; forester; agent; func}
+    {rank=source; forester agent func}
 
     agent -> forester;
     forester -> adifjson;

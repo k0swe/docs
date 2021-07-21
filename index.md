@@ -25,6 +25,8 @@ are components for the Forester web-based contact logger.
 
 * [forester-func](https://github.com/k0swe/forester-func)
   [![Deploy](https://github.com/k0swe/forester-func/workflows/Deploy/badge.svg?branch=deploy)](https://github.com/k0swe/forester-func/actions/workflows/deploy.yml?query=branch%3Adeploy)
+* [qrz-api](https://github.com/k0swe/qrz-api)
+  [![PkgGoDev](https://pkg.go.dev/badge/github.com/k0swe/qrz-api)](https://pkg.go.dev/github.com/k0swe/qrz-api)
 * [qrz-logbook](https://github.com/k0swe/qrz-logbook)
   [![PkgGoDev](https://pkg.go.dev/badge/github.com/k0swe/qrz-logbook)](https://pkg.go.dev/github.com/k0swe/qrz-logbook)
 * [lotw-api](https://github.com/k0swe/lotw-api)
