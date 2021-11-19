@@ -20,6 +20,10 @@ digraph {
             adifparserts [label = "adif-parser-ts"; URL="https://github.com/k0swe/adif-parser-ts"; style=filled; fillcolor="#2b7489"; fontcolor=white]
             forester -> adifparserts
             forester -> ngxkelagent
+
+            // not a real dependency, layout purposes only
+            ngxkelagent -> adifparserts [style=invis]
+            {rank=sink; adifparserts}
         };
         agent [label = "kel-agent"; URL="https://github.com/k0swe/kel-agent"; style=filled; fillcolor="#00ADD8"]
         wsjtxgo [label = "wsjtx-go"; URL="https://github.com/k0swe/wsjtx-go"; style=filled; fillcolor="#00ADD8"]
@@ -45,8 +49,10 @@ digraph {
             lotwapi [label = "lotw-api"; URL="https://github.com/k0swe/lotw-api"; style=filled; fillcolor="#00ADD8"]
             func -> qrzapi
             func -> qrzlogbook
-            qrzapi -> qrzlogbook [style=invis]
             func -> lotwapi
+
+            // not a real dependency, layout purposes only
+            qrzapi -> qrzlogbook [style=invis]
             {rank=sink; qrzlogbook}
         };
 
