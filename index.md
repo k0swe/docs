@@ -13,6 +13,8 @@ are components for the Forester web-based contact logger.
   [![Deploy](https://github.com/k0swe/forester/workflows/Deploy/badge.svg?branch=deploy)](https://github.com/k0swe/forester/actions/workflows/deploy.yml?query=branch%3Adeploy)
 * [adif-parser-ts](https://github.com/k0swe/adif-parser-ts)
   [![npm](https://badgen.net/npm/v/adif-parser-ts)](https://www.npmjs.com/package/adif-parser-ts)
+* [ngx-kel-agent](https://github.com/k0swe/ngx-kel-agent)
+  [![npm](https://badgen.net/npm/v/ngx-kel-agent)](https://www.npmjs.com/package/ngx-kel-agent)
 
 ### Agent program
 
@@ -41,4 +43,4 @@ are components for the Forester web-based contact logger.
 ## Mountaineer
 
 The K0SWE organization is also home to the [Mountaineer](https://github.com/k0swe/mountaineer)
-open-source hardware radio interface device. 
+open-source hardware radio interface device.

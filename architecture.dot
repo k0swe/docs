@@ -16,8 +16,10 @@ digraph {
             fillcolor = "grey95";
 
             forester [URL="https://github.com/k0swe/forester"; style=filled; fillcolor="#2b7489"; fontcolor=white]
+            ngxkelagent [label = "ngx-kel-agent"; URL="https://github.com/k0swe/ngx-kel-agent"; style=filled; fillcolor="#2b7489"; fontcolor=white]
             adifparserts [label = "adif-parser-ts"; URL="https://github.com/k0swe/adif-parser-ts"; style=filled; fillcolor="#2b7489"; fontcolor=white]
             forester -> adifparserts
+            forester -> ngxkelagent
         };
         agent [label = "kel-agent"; URL="https://github.com/k0swe/kel-agent"; style=filled; fillcolor="#00ADD8"]
         wsjtxgo [label = "wsjtx-go"; URL="https://github.com/k0swe/wsjtx-go"; style=filled; fillcolor="#00ADD8"]
@@ -61,7 +63,7 @@ digraph {
     edge [style = dashed; dir = none;]
     {rank=source; forester agent func}
 
-    agent -> forester;
+    agent -> ngxkelagent;
     forester -> adifjson;
     forester -> func;
     func -> adifjson;
