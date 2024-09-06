@@ -37,9 +37,9 @@
 <!-- forester -->
 <g id="node1" class="node">
 <title>forester</title>
-<g id="a_node1"><a xlink:href="https://github.com/k0swe/forester" xlink:title="forester">
-<ellipse fill="#2b7489" stroke="black" cx="258" cy="-186" rx="48.19" ry="18"/>
-<text text-anchor="middle" x="258" y="-182.3" font-family="Times,serif" font-size="14.00" fill="white">forester</text>
+<g id="a_node1"><a xlink:href="https://github.com/k0swe/forester" xlink:title="forester/web">
+<ellipse fill="#2b7489" stroke="black" cx="236" cy="-186" rx="69.59" ry="18"/>
+<text text-anchor="middle" x="236" y="-182.3" font-family="Times,serif" font-size="14.00" fill="white">forester/web</text>
 </a>
 </g>
 </g>
@@ -55,8 +55,8 @@
 <!-- forester&#45;&gt;ngxkelagent -->
 <g id="edge2" class="edge">
 <title>forester&#45;&gt;ngxkelagent</title>
-<path fill="none" stroke="black" d="M247.34,-168.41C241.98,-160.08 235.37,-149.8 229.39,-140.49"/>
-<polygon fill="black" stroke="black" points="232.25,-138.48 223.9,-131.96 226.36,-142.26 232.25,-138.48"/>
+<path fill="none" stroke="black" d="M230.43,-168.05C227.84,-160.18 224.7,-150.62 221.8,-141.79"/>
+<polygon fill="black" stroke="black" points="225.12,-140.68 218.68,-132.28 218.47,-142.87 225.12,-140.68"/>
 </g>
 <!-- adifparserts -->
 <g id="node3" class="node">
@@ -70,22 +70,22 @@
 <!-- forester&#45;&gt;adifparserts -->
 <g id="edge1" class="edge">
 <title>forester&#45;&gt;adifparserts</title>
-<path fill="none" stroke="black" d="M284.94,-170.89C288.99,-167.55 292.61,-163.6 295,-159 309.55,-131 310.3,-115.6 295,-88 289.25,-77.63 280.01,-69.33 270.03,-62.83"/>
+<path fill="none" stroke="black" d="M280.92,-172.16C286.49,-168.75 291.45,-164.44 295,-159 312.24,-132.57 310.3,-115.6 295,-88 289.25,-77.63 280.01,-69.33 270.03,-62.83"/>
 <polygon fill="black" stroke="black" points="271.54,-59.65 261.15,-57.57 267.97,-65.68 271.54,-59.65"/>
 </g>
 <!-- func -->
 <g id="node6" class="node">
 <title>func</title>
-<g id="a_node6"><a xlink:href="https://github.com/k0swe/forester-func" xlink:title="forester&#45;func">
-<ellipse fill="#00add8" stroke="black" cx="627" cy="-186" rx="70.69" ry="18"/>
-<text text-anchor="middle" x="627" y="-182.3" font-family="Times,serif" font-size="14.00">forester&#45;func</text>
+<g id="a_node6"><a xlink:href="https://github.com/k0swe/forester/tree/main/functions" xlink:title="forester/functions">
+<ellipse fill="#00add8" stroke="black" cx="650" cy="-186" rx="93.68" ry="18"/>
+<text text-anchor="middle" x="650" y="-182.3" font-family="Times,serif" font-size="14.00">forester/functions</text>
 </a>
 </g>
 </g>
 <!-- forester&#45;&gt;func -->
 <g id="edge11" class="edge">
 <title>forester&#45;&gt;func</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M306.29,-186C389.49,-186 472.7,-186 555.9,-186"/>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M305.94,-186C389.38,-186 472.82,-186 556.26,-186"/>
 </g>
 <!-- adifjson -->
 <g id="node10" class="node">
@@ -99,7 +99,7 @@
 <!-- forester&#45;&gt;adifjson -->
 <g id="edge10" class="edge">
 <title>forester&#45;&gt;adifjson</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M290.36,-172.49C320.86,-160.69 366.65,-142.98 399.34,-130.34"/>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M279.09,-171.71C291.67,-167.73 305.42,-163.28 318,-159 344.88,-149.86 374.86,-138.96 398.26,-130.29"/>
 </g>
 <!-- ngxkelagent&#45;&gt;adifparserts -->
 <!-- agent -->
@@ -143,8 +143,8 @@
 <!-- func&#45;&gt;qrzapi -->
 <g id="edge5" class="edge">
 <title>func&#45;&gt;qrzapi</title>
-<path fill="none" stroke="black" d="M620.22,-168.05C616.99,-159.97 613.05,-150.12 609.44,-141.11"/>
-<polygon fill="black" stroke="black" points="612.68,-139.77 605.72,-131.79 606.18,-142.37 612.68,-139.77"/>
+<path fill="none" stroke="black" d="M637.65,-168.05C631.42,-159.5 623.75,-148.97 616.89,-139.56"/>
+<polygon fill="black" stroke="black" points="619.6,-137.33 610.88,-131.31 613.94,-141.45 619.6,-137.33"/>
 </g>
 <!-- qrzlogbook -->
 <g id="node8" class="node">
@@ -158,8 +158,8 @@
 <!-- func&#45;&gt;qrzlogbook -->
 <g id="edge6" class="edge">
 <title>func&#45;&gt;qrzlogbook</title>
-<path fill="none" stroke="black" d="M645.53,-168.35C647.76,-165.47 649.7,-162.32 651,-159 662.28,-130.14 656.47,-94.24 649.98,-70.09"/>
-<polygon fill="black" stroke="black" points="653.26,-68.83 647.11,-60.2 646.54,-70.78 653.26,-68.83"/>
+<path fill="none" stroke="black" d="M650.75,-167.94C650.85,-164.96 650.94,-161.89 651,-159 651.61,-127.45 654.44,-119.37 651,-88 650.37,-82.23 649.29,-76.12 648.07,-70.33"/>
+<polygon fill="black" stroke="black" points="651.44,-69.34 645.79,-60.38 644.61,-70.9 651.44,-69.34"/>
 </g>
 <!-- lotwapi -->
 <g id="node9" class="node">
@@ -173,13 +173,13 @@
 <!-- func&#45;&gt;lotwapi -->
 <g id="edge7" class="edge">
 <title>func&#45;&gt;lotwapi</title>
-<path fill="none" stroke="black" d="M651.41,-168.88C656.26,-165.64 661.31,-162.23 666,-159 676.7,-151.64 688.34,-143.43 698.62,-136.12"/>
-<polygon fill="black" stroke="black" points="700.77,-138.88 706.87,-130.22 696.7,-133.18 700.77,-138.88"/>
+<path fill="none" stroke="black" d="M668.88,-168.05C679.04,-158.94 691.71,-147.57 702.71,-137.7"/>
+<polygon fill="black" stroke="black" points="705.26,-140.11 710.36,-130.83 700.58,-134.9 705.26,-140.11"/>
 </g>
 <!-- func&#45;&gt;adifjson -->
 <g id="edge12" class="edge">
 <title>func&#45;&gt;adifjson</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M582.38,-171.86C569.88,-167.95 556.34,-163.51 544,-159 520.42,-150.39 494.4,-139.49 474.15,-130.7"/>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M590.39,-172.11C575.13,-168.34 558.85,-163.9 544,-159 519.79,-151.01 493.31,-139.9 473.01,-130.84"/>
 </g>
 <!-- qrzapi&#45;&gt;qrzlogbook -->
 </g>

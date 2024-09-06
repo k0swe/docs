@@ -15,7 +15,7 @@ digraph {
             style=filled;
             fillcolor = "grey95";
 
-            forester [URL="https://github.com/k0swe/forester"; style=filled; fillcolor="#2b7489"; fontcolor=white]
+            forester [label = "forester/web"; URL="https://github.com/k0swe/forester"; style=filled; fillcolor="#2b7489"; fontcolor=white]
             ngxkelagent [label = "ngx-kel-agent"; URL="https://github.com/k0swe/ngx-kel-agent"; style=filled; fillcolor="#2b7489"; fontcolor=white]
             adifparserts [label = "adif-parser-ts"; URL="https://github.com/k0swe/adif-parser-ts"; style=filled; fillcolor="#2b7489"; fontcolor=white]
             forester -> adifparserts
@@ -43,7 +43,7 @@ digraph {
             style=filled;
             fillcolor = "grey95";
 
-            func [label = "forester-func"; URL="https://github.com/k0swe/forester-func"; style=filled; fillcolor="#00ADD8"]
+            func [label = "forester/functions"; URL="https://github.com/k0swe/forester/tree/main/functions"; style=filled; fillcolor="#00ADD8"]
             qrzapi [label = "qrz-api"; URL="https://github.com/k0swe/qrz-api"; style=filled; fillcolor="#00ADD8"]
             qrzlogbook [label = "qrz-logbook"; URL="https://github.com/k0swe/qrz-logbook"; style=filled; fillcolor="#00ADD8"]
             lotwapi [label = "lotw-api"; URL="https://github.com/k0swe/lotw-api"; style=filled; fillcolor="#00ADD8"]
